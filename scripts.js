@@ -1,13 +1,13 @@
 let increase = document.getElementById('plusBtn');
-let itemValue = document.getElementById('itemValue');
+let itemValue = document.getElementById('itemValue').value;
 
 increase.addEventListener('click', function(){
-    // itemValue.value = parseInt(itemValue.value) + 1;
-    // console.log(itemValue.value)
-
-    itemValueNum = parseInt('itemValue')
-    item
+    let itemValueNum = parseInt(itemValue);
+    let newValueNum = itemValueNum + 1;
+    document.getElementById('itemValue').value = newValueNum;
+    console.log(newValueNum)
 })
+
 
 
 
